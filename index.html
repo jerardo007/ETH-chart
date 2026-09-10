@@ -10,19 +10,24 @@
       padding: 0;
       width: 100%;
       height: 100%;
-      background: transparent;
       overflow: hidden;
+
+      background: #131722;
+      color-scheme: dark;
+
+      --tv-widget-background-color: #131722;
     }
 
     tv-mini-chart {
+      display: block;
       width: 100%;
       height: 100vh;
-      display: block;
     }
   </style>
 </head>
 
 <body>
+
   <script
     type="module"
     src="https://widgets.tradingview-widget.com/w/en/tv-mini-chart.js">
@@ -30,8 +35,8 @@
 
   <tv-mini-chart
     symbol="COINBASE:ETHUSD"
-    theme="dark"
-    transparent>
+    theme="dark">
   </tv-mini-chart>
+
 </body>
 </html>
